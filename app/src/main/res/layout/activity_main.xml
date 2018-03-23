@@ -12,7 +12,7 @@
     <LinearLayout
         android:id="@+id/layout_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
     <EditText
         android:id="@+id/caja_ip"
@@ -40,11 +40,113 @@
         android:text="Calcular"/>
 
     </LinearLayout>
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/lbl_id_net"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ID Network"
-            android:textSize="50sp"/>
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/txt_id_net"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_id_net"/>
+        <TextView
+            android:id="@+id/lbl_broad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broadcast"
+            android:textSize="20sp"
+            android:layout_below="@id/txt_id_net"/>
+        <EditText
+            android:id="@+id/txt_broad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_broad"
+
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/cant_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad IP"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/txt_cant_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cant_ip"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/port_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Port Red"
+                android:textSize="20sp"
+                android:layout_below="@id/txt_cant_ip"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/txt_port_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/port_red"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/lbl_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Port Host"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/txt_port_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_port"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_port_host"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Reset"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 
 </LinearLayout>
