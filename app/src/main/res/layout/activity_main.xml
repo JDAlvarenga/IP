@@ -19,6 +19,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="3"
+        android:inputType="number"
+        android:digits="0123456789."
         />
     <TextView
         android:id="@+id/pleca"
@@ -29,6 +31,7 @@
         />
 
     <EditText
+        android:id="@+id/mascara"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.7"
@@ -37,7 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:text="Calcular"/>
+        android:text="Calculate"
+        android:onClick="calculate"
+        android:inputType="number"/>
 
     </LinearLayout>
     <RelativeLayout
@@ -47,7 +52,7 @@
             android:id="@+id/lbl_id_net"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ID Network"
+            android:text="Network ID"
             android:textSize="20sp"/>
         <EditText
             android:id="@+id/txt_id_net"
@@ -83,7 +88,7 @@
                 android:id="@+id/cant_ip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cantidad IP"
+                android:text="Avaible IPs"
                 android:textSize="20sp"
                 android:layout_centerHorizontal="true"/>
             <EditText
@@ -97,7 +102,7 @@
                 android:id="@+id/port_red"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Port Red"
+                android:text="Network Bits"
                 android:textSize="20sp"
                 android:layout_below="@id/txt_cant_ip"
                 android:layout_centerHorizontal="true"/>
@@ -122,7 +127,7 @@
                 android:id="@+id/lbl_port"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Port Host"
+                android:text="Host Bits"
                 android:textSize="20sp"
                 android:layout_centerHorizontal="true"/>
             <EditText
@@ -140,7 +145,8 @@
                 android:layout_marginTop="10dp"
                 android:text="Reset"
                 android:textSize="20sp"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:onClick="reset"/>
 
 
 
