@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ip = findViewById(R.id.caja_ip);
+        ip = findViewById(R.id.edit_ip);
         mask = findViewById(R.id.mascara);
 
         idNet = findViewById(R.id.txt_id_net);
@@ -26,13 +26,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculate(View v) {
+        //Remove '.'
         String[] st = ip.getText().toString().split("\\.");
 
         long rIP = 0;
         long rMask = 0;
         long wildcard = 0;
+
         int maskInt = Integer.parseInt(mask.getText().toString());
 
+        //Check if format is correct
         if(st.length != 4) return;
 
         //Get binary ip address
@@ -56,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Adds '.' each byte
     public String longToIP(long ip){
         String st="";
 
@@ -66,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         return st;
     }
 
+    //Clears all fields
     public void reset(View v) {
 
         ip.setText("");

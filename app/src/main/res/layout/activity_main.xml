@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <EditText
-        android:id="@+id/caja_ip"
+        android:id="@+id/edit_ip"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="3"
@@ -23,7 +23,6 @@
         android:digits="0123456789."
         />
     <TextView
-        android:id="@+id/pleca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="/"
@@ -40,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:text="Calculate"
+        android:text="@string/btn_calculate"
         android:onClick="calculate"
         android:inputType="number"/>
 
@@ -52,7 +51,7 @@
             android:id="@+id/lbl_id_net"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Network ID"
+            android:text="@string/lbl_network_id"
             android:textSize="20sp"/>
         <EditText
             android:id="@+id/txt_id_net"
@@ -63,7 +62,7 @@
             android:id="@+id/lbl_broad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Broadcast"
+            android:text="@string/lbl_broadcast"
             android:textSize="20sp"
             android:layout_below="@id/txt_id_net"/>
         <EditText
@@ -88,7 +87,7 @@
                 android:id="@+id/cant_ip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Avaible IPs"
+                android:text="@string/lbl_avaible_ips"
                 android:textSize="20sp"
                 android:layout_centerHorizontal="true"/>
             <EditText
@@ -102,7 +101,7 @@
                 android:id="@+id/port_red"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Network Bits"
+                android:text="@string/lbl_network_bits"
                 android:textSize="20sp"
                 android:layout_below="@id/txt_cant_ip"
                 android:layout_centerHorizontal="true"/>
@@ -127,7 +126,7 @@
                 android:id="@+id/lbl_port"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Host Bits"
+                android:text="@string/lbl_host_bits"
                 android:textSize="20sp"
                 android:layout_centerHorizontal="true"/>
             <EditText
@@ -143,7 +142,7 @@
                 android:layout_below="@id/txt_port_host"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="Reset"
+                android:text="@string/btn_reset"
                 android:textSize="20sp"
                 android:layout_centerInParent="true"
                 android:onClick="reset"/>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">IP</string>
+    <string name="lbl_avaible_ips">Avaible IPs</string>
+    <string name="lbl_network_bits">Network Bits</string>
+    <string name="lbl_host_bits">Host Bits</string>
+    <string name="btn_reset">Reset</string>
+    <string name="lbl_broadcast">Broadcast</string>
+    <string name="lbl_network_id">Network ID</string>
+    <string name="btn_calculate">Calculate</string>
 </resources>
